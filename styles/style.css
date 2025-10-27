@@ -130,12 +130,12 @@ ol {
 }
 
 .content__video-card-title {
+  overflow: hidden;
   font-weight: 700;
   font-size: 30px;
   text-transform: uppercase;
   text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden;
 }
 
 .content__video-card-description {
@@ -166,12 +166,12 @@ ol {
 }
 
 .title {
+  align-self: flex-start;
   font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
   text-transform: uppercase;
-  align-self: flex-start;
 }
 
 .content__accent {
@@ -194,8 +194,8 @@ ol {
 .search-form__label {
   display: flex;
   align-items: center;
-  width: fit-content;
   gap: 5px;
+  width: fit-content;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -207,16 +207,16 @@ ol {
 }
 
 .search-form__textfield {
-  font-family: "Fira Sans Condensed", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  color: #fff;
+  min-width: 225px;
   border: none;
   border-top: 1px solid #fff ;
   border-bottom: 1px solid #fff;
+  color: #fff;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
   background-color: transparent;
   appearance: none;
-  min-width: 225px;
 }
 
 .search-form__textfield::placeholder {
@@ -244,10 +244,10 @@ ol {
 .search-form__pseudo-checkbox::after {
   content: "";
   display: block;
-  background-color: #fff;
   width: 100%;
   height: 100%;
   opacity: 0;
+  background-color: #fff;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
@@ -256,27 +256,27 @@ ol {
 
 .visually-hidden {
   position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
   clip-path: inset(50%);
   white-space: nowrap;
 }
 
 label:not(:has(input[type="text"])):hover {
-  text-decoration: underline;
   outline: 1px solid #fff;
+  text-decoration: underline;
   cursor: pointer;
 }
 
 .button {
-  background-color: transparent;
   border: 1px solid #fff;
   color: #fff;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  font-family: "Fira Sans Condensed", sans-serif;
+  background-color: transparent;
 }
 
 .button:hover {
@@ -297,9 +297,9 @@ label:not(:has(input[type="text"])):hover {
 }
 
 .search-form__submit-button {
+  align-self: flex-end;
   min-width: 194px;
   min-height: 34px;
-  align-self: flex-end;
 }
 
 .more-button {
